@@ -3,7 +3,7 @@ package com.example.buzzchat;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-
+//hi
 public class IgScreenActivity extends AppCompatActivity {
 
     @Override
