@@ -5,16 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.buzzchat.Fragment.HomeFragment;
 import com.example.buzzchat.Fragment.NotificationFragment;
-import com.example.buzzchat.Fragment.ProfileFragment;
 import com.example.buzzchat.Fragment.SearchFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.firebase.auth.FirebaseAuth;
 
 //hi
 public class IgScreenActivity extends AppCompatActivity {
@@ -52,8 +49,8 @@ public class IgScreenActivity extends AppCompatActivity {
                         case R.id.nav_profile:
                             /*SharedPreferences.Editor editor = getSharedPreferences("PREPS",MODE_PRIVATE).edit();
                             editor.putString("profileid", FirebaseAuth.getInstance().getCurrentUser().getUid());
-                            editor.apply();
-                            selectedFragment = new ProfileFragment();*/
+                            editor.apply();*/
+                            selectedFragment = null;
                             startActivity(new Intent(IgScreenActivity.this,ProfileActivity.class));
                             break;
                     }
