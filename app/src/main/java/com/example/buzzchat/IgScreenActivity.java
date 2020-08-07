@@ -1,65 +1,29 @@
 package com.example.buzzchat;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
+import android.view.View;
 
-import com.example.buzzchat.Fragment.HomeFragment;
-import com.example.buzzchat.Fragment.NotificationFragment;
-import com.example.buzzchat.Fragment.SearchFragment;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
 
 //hi
 public class IgScreenActivity extends AppCompatActivity {
-    BottomNavigationView bottomNavigationView;
-    Fragment selectedFragment = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ig_screen);
-        bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+              startActivity(new Intent(IgScreenActivity.this,PostActivity.class));
+              finish();
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();
-
+            }
+        });
     }
-    private BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
-            new BottomNavigationView.OnNavigationItemSelectedListener() {
-                @Override
-                public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-
-                    switch(menuItem.getItemId()){
-                        case R.id.nav_home:
-                            selectedFragment = new HomeFragment();
-                            break;
-                        case R.id.nav_search:
-                            selectedFragment = new SearchFragment();
-                            break;
-                        case R.id.nav_add:
-                            selectedFragment = null;
-                            startActivity(new Intent(IgScreenActivity.this,PostActivity.class));
-                            break;
-                        case R.id.nav_heart:
-                            selectedFragment = new NotificationFragment();
-                            break;
-                        case R.id.nav_profile:
-                            /*SharedPreferences.Editor editor = getSharedPreferences("PREPS",MODE_PRIVATE).edit();
-                            editor.putString("profileid", FirebaseAuth.getInstance().getCurrentUser().getUid());
-                            editor.apply();*/
-                            selectedFragment = null;
-                            startActivity(new Intent(IgScreenActivity.this,ProfileActivity.class));
-                            break;
-                    }
-
-                    if(selectedFragment != null){
-                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();
-                    }
-
-                    return true;
-                }
-            };
 }

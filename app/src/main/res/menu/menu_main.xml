@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_camera"
+        android:orderInCategory="100"
+        android:title=""
+        android:iconTint="#000"
+        android:icon="@drawable/ic_baseline_camera_alt_24"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:title=""
+        android:iconTint="#000"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:showAsAction="always" />
+    <item
+        android:title="Settings"
+        android:id="@id/action_settings"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+</menu>
