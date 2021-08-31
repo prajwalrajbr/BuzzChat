@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".UserProfileActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/home_toolbar"
+        android:visibility="visible"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        tools:ignore="NotSibling" />
+
+    <ImageView
+        android:id="@+id/userProfileImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/default_profile_pic"
+        android:background="@color/bgColor"
+        android:layout_below="@id/toolbar"/>
+
+
+
+    <Button
+        android:id="@+id/addUserFriend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Friend"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:visibility="visible"
+        android:textStyle="bold"
+        android:background="@color/green"/>
+
+    <Button
+        android:id="@+id/cancelRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel Request"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginBottom="40dp"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:textStyle="bold"
+        android:background="@color/red"/>
+
+    <TextView
+        android:id="@+id/userUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/toolbar"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

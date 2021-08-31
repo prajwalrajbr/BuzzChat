@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:background="@color/bgColor"
+    android:orientation="horizontal"
+    tools:context=".SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/splash1"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/buzz_logo1"/>
+    <TextView
+        android:id="@+id/t"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/splash1"
+        android:textStyle="bold|italic"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textColor="#ddd"
+        android:text="POWERED BY"/>
+
+    <ImageView
+        android:id="@+id/i"
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-8dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="117dp"
+        app:srcCompat="@drawable/runshaw" />
+
+</RelativeLayout>

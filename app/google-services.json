@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "631976674504",
+    "firebase_url": "https://buzzchat3-default-rtdb.firebaseio.com",
+    "project_id": "buzzchat3",
+    "storage_bucket": "buzzchat3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631976674504:android:5062713939838fd58091fd",
+        "android_client_info": {
+          "package_name": "com.example.buzzchat3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "631976674504-mq7jgnlgcu5et9r2lv68a2irvho55l8c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVSVytpCZfebjF0dK8vEbc2vtv6TIFJXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "631976674504-mq7jgnlgcu5et9r2lv68a2irvho55l8c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

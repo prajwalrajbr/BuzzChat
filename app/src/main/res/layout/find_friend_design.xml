@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:elevation="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginHorizontal="25dp">
+
+    <RelativeLayout
+        android:id="@+id/cardViewNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/findFriendImage"
+            android:layout_width="100dp"
+            android:layout_margin="10dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_profile_pic"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_on"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            app:civ_border_width="10dp"
+            app:civ_border_color="@color/green"
+            android:src="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="-12dp"
+            android:visibility="gone"
+            android:layout_toEndOf="@id/findFriendImage"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_off"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            app:civ_border_width="10dp"
+            app:civ_border_color="@color/red"
+            android:src="@color/white"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="-12dp"
+            android:layout_toEndOf="@id/findFriendImage"/>
+
+        <LinearLayout
+            android:id="@+id/findFriendDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@id/findFriendImage"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/findFriendUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text=""
+                android:textAllCaps="true"
+                />
+
+            <TextView
+                android:id="@+id/findFriendBio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:text=""
+                />
+
+            <Button
+                android:id="@+id/acceptBtn"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="10dp"
+                android:text="Accept Friend Request"
+                android:background="@color/green"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/rejectBtn"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="10dp"
+                android:text="Reject Friend Request"
+                android:background="@color/red"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/last_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/colorPrimary"
+                android:maxLines="1"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

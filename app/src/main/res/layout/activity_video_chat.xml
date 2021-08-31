@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoChatActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/subscriber_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bgColor">
+
+            <FrameLayout
+                android:id="@+id/publisher_container"
+                android:layout_width="90sp"
+                android:layout_height="120sp"
+                android:background="@color/colorPrimary"
+                android:layout_gravity="bottom|start"
+                android:layout_margin="20sp">
+
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="40dp"
+        android:layout_margin="20dp"
+        android:elevation="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        >
+
+        <ImageView
+            android:id="@+id/end_video_chat_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/red"
+            app:srcCompat="@drawable/ic_baseline_call_end_24"
+
+            />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

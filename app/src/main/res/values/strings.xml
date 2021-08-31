@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">BuzzChat</string>
+    <string name="title_activity_tabbed">BuzzChat</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="next">Next</string>
+    <string name="enter_6_digit_code">Enter 6-digit code</string>
+    <string name="otp_input">------</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="buzzchat_will_send_an_sms_to_verify_your_phone_number">BuzzChat will send an SMS to verify your phone number.</string>
+    <string name="enter_your_phone_number">Enter Your Phone Number</string>
+    <string name="todo">TODO</string>
+    <string name="type_a_message">Type a message...</string>
+    <string name="seen">seen</string>
+    <string name="username">username</string>
+    <string name="view_all_comments">View All Comments</string>
+    <string name="description">Description</string>
+    <string name="likes">likes</string>
+    <string name="add_a_comment">Add a comment...</string>
+    <string name="post">POST</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="photo">Photo</string>
+
+
+    <string name="title_settings_dialog">Permissions Required</string>
+    <string name="rationale_video_app">This app needs access to your camera and mic to make video calls</string>
+</resources>
